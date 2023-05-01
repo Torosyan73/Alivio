@@ -1,0 +1,121 @@
+html, body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #424242;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1400px;
+    padding: 0 15px;
+    margin: 0 auto;
+
+    &--wide {
+        max-width: 1536px;
+    }
+}
+
+.button {
+    display: inline-block;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #000000;
+    transition: color 0.2s ease-in;
+
+    &:hover {
+        color: #01996D;
+    }
+
+    &--dark {
+        padding: 13px 50px;
+        line-height: 1.25;
+        color: #fff;
+        background-color: #01996D;
+        border: 1px solid #01996D;
+        border-radius: 4px;
+        transition: background-color 0.2s ease-in , color 0.2s ease-in;
+
+        &:hover {
+            background-color: #fff;
+            color: #01996D;
+        }
+    }
+
+    &--large {
+        padding: 20px 50px;
+    }
+}
+
+.title-1 {
+    font-family: 'Georgia', serif;
+    font-weight: 700;
+    font-size: 65px;
+    line-height: 1.138;
+}
+
+.title-2 {
+    font-family: 'Georgia', serif;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 1.57;
+}
+
+.title-3 {
+    font-family: 'Georgia', serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 1.5;
+}
+
+@media(max-width: 992px) {
+    .title-1 {
+        font-size: 55px;
+    }
+
+    .title-2 {
+        font-size: 40px;
+        line-height: 1.3;
+    }
+
+    .button {
+        &--dark {
+            padding: 10px 30px;
+        }
+    }
+}
+
+@media(max-width: 600px) {
+    body {
+        font-size: 18px;
+    }
+
+    .title-1 {
+        font-size: 50px;
+    }
+
+    .title-2 {
+        font-size: 30px;
+    }
+
+    .button {
+        font-size: 18px;
+
+        &--dark {
+            padding: 8px 25px;
+        }
+    }
+}
+
+@media(max-width: 425px) {
+    .title-1 {
+        font-size: 40px;
+    }
+}
+
+
+
